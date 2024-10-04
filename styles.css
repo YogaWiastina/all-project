@@ -1,0 +1,66 @@
+body {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    /* Gunakan 100vh agar body selalu penuh layar */
+}
+
+.first .content {
+    padding: 1.4rem 5%;
+    /* Mengurangi padding di sisi untuk perangkat kecil */
+}
+
+.first h1 {
+    -webkit-text-stroke: 3px rgb(255, 0, 0);
+    /* width and color */
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+    color: rgb(251, 255, 0);
+}
+
+.first .card {
+    margin-bottom: 1rem;
+    /* Memberi jarak antar card */
+    height: 100%;
+    /* Memastikan semua card memiliki tinggi yang sama */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgb(132, 132, 132);
+    /* Menambahkan shadow */
+}
+
+.first .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.first .card-text {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+#more {
+    display: none;
+}
+
+
+/* Media query untuk responsivitas */
+
+@media (max-width: 768px) {
+    .first .card {
+        height: auto;
+        /* Tinggi otomatis agar sesuai dengan konten */
+    }
+    .first .content {
+        padding: 1rem;
+        /* Padding lebih kecil untuk perangkat kecil */
+    }
+}
